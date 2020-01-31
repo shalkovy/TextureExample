@@ -18,6 +18,8 @@
 		D1F90F4D23E4B8E90062E3F6 /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F90F4C23E4B8E90062E3F6 /* ApiRouter.swift */; };
 		D1F90F5123E4BB480062E3F6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F90F5023E4BB480062E3F6 /* NetworkManager.swift */; };
 		D1F90F5323E4BCE50062E3F6 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F90F5223E4BCE50062E3F6 /* Movie.swift */; };
+		D1F90F5723E4D1490062E3F6 /* ASImageNode+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F90F5623E4D1490062E3F6 /* ASImageNode+Load.swift */; };
+		D1F90F5923E4D1CD0062E3F6 /* ImageNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F90F5823E4D1CD0062E3F6 /* ImageNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		D1F90F4C23E4B8E90062E3F6 /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
 		D1F90F5023E4BB480062E3F6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		D1F90F5223E4BCE50062E3F6 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		D1F90F5623E4D1490062E3F6 /* ASImageNode+Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ASImageNode+Load.swift"; sourceTree = "<group>"; };
+		D1F90F5823E4D1CD0062E3F6 /* ImageNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				D1E5A8BF23E4B41200FA2B43 /* NodeButton.swift */,
+				D1F90F5823E4D1CD0062E3F6 /* ImageNode.swift */,
 				D1E5A8BD23E4A16B00FA2B43 /* NodeTextField.swift */,
 			);
 			name = View;
@@ -80,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				D1E5A8C323E4B7A200FA2B43 /* UIFont+Standart.swift */,
+				D1F90F5623E4D1490062E3F6 /* ASImageNode+Load.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -266,10 +272,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1E5A8C023E4B41200FA2B43 /* NodeButton.swift in Sources */,
+				D1F90F5923E4D1CD0062E3F6 /* ImageNode.swift in Sources */,
 				D1F90F5323E4BCE50062E3F6 /* Movie.swift in Sources */,
 				D1F90F5123E4BB480062E3F6 /* NetworkManager.swift in Sources */,
 				D1F90F4D23E4B8E90062E3F6 /* ApiRouter.swift in Sources */,
 				D1E5A8C423E4B7A200FA2B43 /* UIFont+Standart.swift in Sources */,
+				D1F90F5723E4D1490062E3F6 /* ASImageNode+Load.swift in Sources */,
 				D1EAFCC123E35821003132F4 /* MainViewController.swift in Sources */,
 				D1EAFCBD23E35821003132F4 /* AppDelegate.swift in Sources */,
 				D1E5A8BE23E4A16B00FA2B43 /* NodeTextField.swift in Sources */,
