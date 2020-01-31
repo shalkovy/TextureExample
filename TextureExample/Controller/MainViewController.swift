@@ -13,12 +13,14 @@ class MainViewController: UIViewController, ASEditableTextNodeDelegate {
     
     private var searchTextField: NodeTextField
     private var searchButton: NodeButton
+    private var networkManager: NetworkManager
     
-    required init() {
+    required init(networkManager: NetworkManager) {
+        self.networkManager = networkManager
         searchTextField = NodeTextField()
         searchButton = NodeButton()
+        
         super.init(nibName: nil, bundle: nil)
-        searchTextField.delegate = self
     }
     
     required init?(coder: NSCoder) {
@@ -33,12 +35,21 @@ class MainViewController: UIViewController, ASEditableTextNodeDelegate {
         self.view.addSubnode(searchTextField)
         self.view.addSubnode(searchButton)
         
+        // add selector to button
+        searchButton.addTarget(self, action: #selector(searchButtonTapped), forControlEvents: .touchUpInside)
     }
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         searchTextField.frame = CGRect(x: 20, y: 70, width: self.view.bounds.width - 40, height: 40)
         searchButton.frame = CGRect(x: 20, y: 120, width: self.view.bounds.width - 40, height: 60)
+    }
+    
+    @objc private func searchButtonTapped() {
+        guard let text = searchTextField.textView.text, !text.isEmpty else { return }
+        networkManager.getMovie(title: text) { movie in
+            print(movie)
+        }
     }
 }
 
